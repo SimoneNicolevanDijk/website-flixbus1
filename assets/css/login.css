@@ -1,0 +1,217 @@
+/* ------------------------Reset voor browsers -----------------------*/
+
+body {
+    margin: 0em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* -----------------------  Header  -----------------------------*/
+
+header {
+    align-items: center;
+    background-color: #73D700;
+    display: flex;
+    flex: auto;
+    justify-content: space-between;
+    padding: 1em;
+    width: 100%;
+}
+
+header a {
+    align-items: center;
+    margin-right: auto;
+    width: 13em;
+}
+
+header a:nth-child(3) {
+    margin-left: 2em;
+    margin-right: 1em;
+    width: 2em;
+}
+
+header input {
+    background-color: #73D700;
+    border-radius: .2em;
+    border: 1px solid #ffffff;
+    display: flex;
+    margin-left: 3em;
+    margin-right: 5em;
+    margin-top: .4em;
+    padding: .5em .5em .5em .5em;
+    width: 10em;
+}
+
+main {
+    align-content: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+/*---------------- Placeholder form style------------------------------*/
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #E1E1E1;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #E1E1E1;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #E1E1E1;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #E1E1E1;
+}
+
+/* login form----------------------------------------------------------*/
+
+main {
+    /*height: 100vh;*/
+    background-image: url('/assets/img/ben-white-138093.jpg');
+    background-position: bottom;
+    background-size: cover;
+    object-fit: cover;
+    padding-bottom: 3em;
+    padding-top: 3em;
+    width: 100%;
+}
+
+
+main form {
+    background-color: #ffffff;
+    flex: auto;
+    font-family: "Roboto Condensed light", "Arial", sans-serif;
+    font-size: 1em;
+    max-width: 30em;
+    margin: auto;
+    opacity: 0.9;
+    padding: 1em;
+    text-align: left;
+    width: 75%;
+}
+
+main form fieldset legend {
+    color: #444;
+    display: block;
+    font-family: "Roboto Condensed light", "Arial", sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-bottom: .5em;
+    text-align: left;
+
+}
+
+form fieldset {
+    border: none;
+    text-align: left;
+}
+
+form fieldset input {
+    background-color: #ffffff;
+    border: 1px solid #73D700;
+    border-radius: .2em;
+    padding-top: .5em;
+    padding-bottom: 1em;
+}
+
+form input[type=text] {
+    box-sizing: border-box;
+    margin: 8px 0;
+    padding: 1.5em 1.5em;
+    width: 100%;
+}
+
+form input[type=email] {
+    box-sizing: border-box;
+    margin: 8px 0;
+    padding: 1.5em 1.5em;
+    width: 100%;
+}
+
+form input[type=password] {
+    box-sizing: border-box;
+    margin: 8px 0;
+    padding: 1.5em 1.5em;
+    width: 100%;
+}
+
+
+
+/*--- VALIDATIE -------*/
+
+main form input:empty {
+    border: 2px solid #E1E1E1;
+}
+
+main form input:valid {
+    border: 2px solid green;
+}
+
+/*-------------------login button -----------------------------*/
+
+form button {
+    background-color: #73D700;
+    border-radius: .2em;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    color: #ffffff;
+    margin: 1em 0;
+    padding: 2em 2em;
+    width: 100%;
+}
+
+form button :hover {
+    background-color: #73D700;
+    border-radius: .2em;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    color: #ffffff;
+    margin: 1em 0;
+    padding: 2em 2em;
+    width: 100%;
+}
+
+
+form button a:link,
+a:visited {
+    background-color: #73D700;
+    box-sizing: border-box;
+    color: orangered;
+    margin: 1em 0;
+    padding: 2em 2em;
+    width: 100%;
+}
+
+
+/* Mediaquiries ----------------------------------------------------*/
+
+/* small screen-------------------------*/
+
+@media (min-width 40em) and (max-width 60em) {
+    main article {
+        width: 45%;
+        width: calc(50% - 1em);
+    }
+}
+
+/* medium screens-----------------------*/
+
+@media (min-width 60em) {
+    main article {
+        width: 25%;
+        width: calc(25% - 1em);
+    }
+}

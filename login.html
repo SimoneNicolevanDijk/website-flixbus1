@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flixbus - Travelreading</title>
+    <link href="assets/css/login.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=latin-ext,cyrillic-ext" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="assets/img/Flixbus-logo.svg" alt="logo"></a>
+
+        <form>
+            <input type="text" placeholder="zoek verhaal..">
+        </form>
+
+        <a href="login.html"> <img src="assets/img/slotje.svg" alt="lock-icon"></a>
+    </header>
+
+    <main>
+
+        <form action="ingelogd.html" method="get">
+            <fieldset>
+                <legend>Inloggen</legend>
+
+                <label> Email
+                    <input type="email" class="email" name="email" placeholder="voorbeeld@email.com" required pattern="[^ @]*@[^ @]*"/>
+                </label>
+
+                <label> Wachtwoord
+                    <input type="password" class="password" name="password" placeholder="Wachtwoord" required/>
+                </label>
+
+
+
+                <button type="submit">Log in</button>
+            </fieldset>
+        </form>
+
+
+
+        <form action="ingelogd.html" method="get">
+            <fieldset>
+                <legend>Nieuw account aanmaken</legend>
+
+                <label> Vul hier uw voornaam in; (4 tot 8 characters)*
+                    <input type="text" class="voornaam" name="achternaam" placeholder="Voornaam" required minlength="4" maxlength="8" size="10"/>
+                </label>
+
+                <label> Vul hier uw achternaam in; (2 tot 8 characters)*
+                    <input type="text" class="achternaam" name="achternaam" placeholder="Achternaam" required minlength="2" maxlength="8" size="10"/>
+                </label>
+
+                <label> Vul hier uw email in; *
+                    <input type="email" class="email" name="email" placeholder="voorbeeld@email.com" required pattern="[^ @]*@[^ @]*"/>
+                </label>
+
+
+                <legend>Wachtwoord aanmaken</legend>
+
+                <label>Maak hier een wachtwoord aan * (min 8 charachters, 1 Hoofdletter en 1 cijfer)
+                     <input type="password" class="password" name="password" placeholder="wachtwoord" required/>
+                 </label>
+
+                <label> Bevestig hier uw wachtwoord;
+                    <input type="password" class="password" name="password" placeholder="bevestig wachtwoord" required/>
+                </label>
+
+
+                <button type="submit"> Maak een account aan </button>
+            </fieldset>
+
+
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

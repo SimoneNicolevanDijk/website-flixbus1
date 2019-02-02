@@ -1,0 +1,394 @@
+/* ------------------------Reset voor browsers -----------------------*/
+
+body {
+    margin: 0em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* -----------------------  Header  -----------------------------*/
+
+header {
+    background-color: #73D700;
+    display: flex;
+    flex: flex-end;
+    justify-content: space-between;
+    padding: 1em;
+    width: 100%;
+}
+
+header a {
+    align-items: center;
+    margin-right: auto;
+    width: 13em;
+}
+
+header a:nth-child(3) {
+    margin-right: 0em;
+    width: 2em;
+}
+
+header form {
+    display: flex;
+}
+
+header form input {
+    background-color: #73d700;
+    border-radius: .2em;
+    border: 0.1em solid #ffffff;
+    display: flex;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: .4em;
+    padding: .5em .5em .5em .5em;
+    width: 10em;
+}
+
+
+/*--- zoekbalk---(hulp sven)*/
+
+header img {
+    max-width: auto;
+    background-color: #73d700;
+    transition: .3s ease-out all;
+}
+
+header img:hover {
+    transform: scale(1.1);
+}
+
+header a:nth-child(3) img {
+    max-width: 2.0em;
+    transition: .3s ease-out all;
+}
+
+header a:nth-child(3) img:hover {
+    transform: scale(1.3);
+}
+
+header a {
+    margin-right: auto;
+    display: block;
+}
+
+header a:nth-child(3) {
+    margin-right: -1em;
+    background-color: #73d700;
+    z-index: 1;
+}
+
+header form {
+    display: flex;
+}
+
+header a {
+    display: block;
+}
+
+form input[type=button] {
+    background-image: url('/assets/img/magnifier.svg');
+    background-size: cover;
+    background-color: #73d700;
+    height: 3em;
+    width: 3em;
+    margin-right: 1em;
+    transition: .3s ease-in all;
+}
+
+
+form input[type=button] {
+    border: none;
+    background-color: #73d700;
+}
+
+form input[type=button]:hover {
+    transform: rotate(90deg) scale(1.3);
+}
+
+form input[type=text] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    position: relative;
+    transition: .5s ease-out all;
+    left: 0;
+    z-index: 0;
+}
+
+form input[type=text].inschuiven-zoeken {
+    left: 20em;
+}
+
+
+/*---------------- Placeholder form style------------------------------*/
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: white;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: white;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: white;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: white;
+}
+
+
+/* banner style-------------------------------------------------------*/
+
+#filter {
+    background-image: url('/assets/img/ben-white-138093.jpg');
+    background-position: bottom;
+    background-size: cover;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    padding-bottom: 3em;
+    padding-top: 3em;
+    width: 100%;
+}
+
+#filter h1 {
+    font-family: "Roboto Condensed light", "Arial", sans-serif;
+    font-size: 1.3em;
+    padding-left: .5em;
+    text-align: center;
+}
+
+#filter form {
+    align-items: center;
+    background-color: #ffffff;
+    border: 0.1em solid #73d700;
+    font-family: "Roboto Condensed light", "Arial", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 20em;
+    opacity: 0.9;
+    width: 75%;
+    transition: opacity 0.25s;
+}
+
+#filter form fieldset {
+    border: none;
+    text-align: center;
+}
+
+/* opties banner------------------------------------------------------*/
+
+#opties {
+    background-image: url('/assets/img/ben-white-138093.jpg');
+    background-position: bottom;
+    background-size: cover;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    padding-bottom: 3em;
+    padding-top: 3em;
+    width: 100%;
+}
+
+#opties h1 {
+    font-family: "Roboto Condensed light", "Arial", sans-serif;
+    font-size: 1.3em;
+    padding-left: .5em;
+    text-align: center;
+}
+
+#opties form {
+    align-items: center;
+    background-color: #ffffff;
+    border: 0.1em solid #73d700;
+    font-family: "Roboto Condensed light", "Arial", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 20em;
+    opacity: 0.9;
+    width: 75%;
+}
+
+#opties form fieldset {
+    border: none;
+    text-align: center;
+}
+
+h2 {
+    color: #444;
+    display: block;
+    font-family: "Roboto Condensed light", "Arial", sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+/* verhalen home css --------------------------------------------------*/
+
+body {
+    align-content: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/* Articles -----------------------------------------------------------*/
+
+article {
+    background-color: #ffffff;
+    border-radius: 0.3125em;
+    border: 0.1em solid #E1E1E1;
+    display: flex;
+    flex-direction: column;
+    margin: .5em;
+    max-width: 20em;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+article img {
+    height: 10em;
+    max-height: 12em;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+
+article h3 {
+    color: #444;
+    display: block;
+    font-family: "Roboto Condensed light", "Arial", sans-serif;
+    font-size: 1.17em;
+    font-weight: bold;
+    margin: .2em;
+    padding-left: .5em;
+}
+
+article p {
+    color: #444;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.375em;
+    padding-left: .8em;
+    padding-right: .8em;
+}
+
+article button {
+    background-color: orange;
+    border-color: #F1A638;
+    border-radius: 0.3125em;
+    border-style: solid;
+    border-width: 0.0625em;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 400;
+    height: 2.25em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    min-height: 2.5em;
+    padding: 0 0.9375em;
+    text-align: center;
+}
+
+article button a {
+    color: #ffffff;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    text-decoration: none;
+}
+
+
+
+/* footer----------------------------------------------------------- */
+
+article footer {
+    align-items: center;
+    background-color: #FFFFFF;
+    border-top: 1px solid #E6E6E6;
+    display: flex;
+    margin-top: auto;
+    max-height: 2em;
+    padding: 1em;
+    position: relative;
+    width: 100%;
+    color: #ffffff;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    text-decoration: none;
+    margin-bottom: 0.1em;
+
+}
+
+article footer button {
+    display: flex;
+    left: -1em;
+    margin: 0.1em;
+    width: 7em;
+    align-items: center;
+}
+
+article footer img {
+    max-height: 1em;
+    width: 1em;
+    margin: auto;
+}
+
+div {
+    opacity: 0;
+    transition: 2s;
+    max-height: 1em;
+}
+
+div.yay {
+    opacity: 1;
+    background-color: red;
+}
+
+/* Mediaquiries ----------------------------------------------------*/
+
+/* small screen-------------------------*/
+
+@media (min-width 40em) and (max-width 60em) {
+    article {
+        width: 45%;
+        width: calc(50% - 1em);
+    }
+}
+
+/* medium screens-----------------------*/
+
+@media (min-width 60em) {
+    article {
+        width: 25%;
+        width: calc(25% - 1em);
+    }
+}
